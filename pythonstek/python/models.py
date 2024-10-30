@@ -15,3 +15,13 @@ class UserProgress(models.Model):
 
     def __str__(self):
         return f"{self.user.username}: {self.progress}%"
+    
+
+class ContactUs(models.Model):
+    name = models.CharField(max_length=150)
+    email = models.EmailField(max_length=150)
+    reason = models.TextField()
+
+    def __str__(self):
+        return 
+
